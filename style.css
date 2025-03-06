@@ -192,14 +192,6 @@
     margin-top: 20px;
   }
   
-  .WeatherInfo .humid {
-    color:#fd7e14
-  }
-
-  .WeatherInfo .wind {
-    color:#0dcaf0;
-  }
-  
   .WeatherInfo .temperature-container {
     margin-top: 30px;
     align-items: center;
