@@ -63,14 +63,13 @@ function displayForecast(response) {
                 forecastHTML += 
                 `<div class="WeatherForecastPreview">
                         <div class="forecast-time">${dayName}</div>
-                    <div id="icon">
+                    <div class="icon">
                         <img src="${day.condition.icon_url}" alt="${day.condition.description}" class="weather-forecast-icon-img"/>
                     </div>
                         <canvas width="38" height="38"></canvas>
                         <div class="forecast-temperature">
-                            <span class="forecast-icon"></span>
                              <span class="forecast-temperature-max">${Math.round(day.temperature.maximum)}°C</span>
-                        <span class="forecast-temperature-min">${Math.round(day.temperature.minimum)}°C</span>
+                             <span class="forecast-temperature-min">${Math.round(day.temperature.minimum)}°C</span>
                         </div>
                     </div>`;
         } else {
