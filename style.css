@@ -184,7 +184,6 @@
   }
   
   .Weather .WeatherForecast canvas {
-    display: inline;
     margin: 20px auto;
   }
 
