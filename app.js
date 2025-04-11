@@ -33,10 +33,13 @@ function formatDate(timestamp) {
     var day = days[date.getDay()];
     var hours = date.getHours();
     var minutes = date.getMinutes();
+    const ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12;
     if (minutes < 10) {
         minutes = `0${minutes}`;
     }
-    return `${day}, ${hours}:${minutes}`;
+    return `${day}, ${hours}:${minutes} ${ampm}`;
 }
 
 
